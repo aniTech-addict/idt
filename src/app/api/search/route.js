@@ -1,12 +1,12 @@
 import { NextResponse } from 'next/server';
 import axios from 'axios';
-import  gen_ai  from '../../../utils/gemini.util';
+
 import getPaperId from '../../../utils/getPaperId';
 
 export async function POST(request){
   
   const { query } = await request.json();
-const paperId= await getPaperId(query);
+  const paperId= await getPaperId(query);
 
 try {
   const apiKey = process.env.SEMANTIC_SCHOLAR_API_KEY;
@@ -22,13 +22,7 @@ try {
 
     
     const recommendations = recommendationResponse.data.recommendedPapers;
-    const genRes =await gen_ai(query);
-
-  console.log("--- RECOMMENDATIONS FOUND ---", recommendations);
-  return new NextResponse(JSON.stringify(recommendations), {
-    status: 200,
-    headers: { 'Content-Type': 'application/json' },
-  });
+    
 
 }   catch (error) {
         console.error("--- ONE OF THE FETCHES FAILED ---", error);
