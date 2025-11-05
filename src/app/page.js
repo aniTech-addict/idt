@@ -12,24 +12,46 @@ const HomePage = () => {
   const [loading, setLoading] = useState(false);
   const [user, setUser] = useState({ name: "Test User1", email: "john@example.com", role: "Researcher" });
   const [enhanceQuery, setEnhanceQuery] = useState([]);
-  const { register, handleSubmit, formState: { errors } } = useForm();
+  const [searchQuery, setSearchQuery] = useState("");
+  const { register, handleSubmit, formState: { errors }, setValue } = useForm();
 
   const handleRefineQuery = async (optionNumber, additionalContext) => {
-    console.log("Refining query with:", { optionNumber, additionalContext });
-    // Here you would typically send this to an API to refine the query
-    // For now, we'll just clear the enhancement and show results
-    setEnhanceQuery(null);
-    // You could also trigger a new search with the refined query
-    // For demonstration, let's simulate getting some results
-    setResults([
-      {
-        title: "Sample Refined Research Paper",
-        authors: [{ name: "Author One" }, { name: "Author Two" }],
-        year: 2024,
-        url: "https://example.com/paper"
-      }
-    ]);
-  };
+   // Validate optionNumber to prevent array out of bounds
+   if (optionNumber < 0 || optionNumber >= enhanceQuery.length) {
+     console.error("Invalid option number:", optionNumber);
+     setError("Invalid refinement option selected.");
+     return;
+   }
+
+   const option = enhanceQuery[optionNumber];
+   console.log("Refining query with:", { option, additionalContext });
+
+   setLoading(true);
+   setError(null);
+
+   try {
+     // The refineQuery API now returns recommendations directly
+     const response = await axios.post('/api/refineQuery', {
+       option: option,
+       context: additionalContext
+     });
+
+     // Set the recommendations directly from the response
+     setResults(response.data.recommendations);
+
+     // Auto-fill the search box with the refined query
+     const refinedQuery = response.data.refined_query;
+     setSearchQuery(refinedQuery);
+     setValue("query", refinedQuery); // Update react-hook-form value
+   } catch (error) {
+     console.error("Error from refinement:", error);
+     setError(error.response?.data?.error || 'Failed to refine query');
+   } finally {
+     setLoading(false);
+     // Clear enhanceQuery after refinement attempt
+     setEnhanceQuery(null);
+   }
+ };
   async function onSubmit(data) {
     setLoading(true);
     setError(null);
@@ -93,6 +115,8 @@ const HomePage = () => {
                   type="text"
                   placeholder="Enter your search query..."
                   {...register("query", { required: true })}
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
                   className=" text-gray-800 w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
                 />
                 {errors.query && (

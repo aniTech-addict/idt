@@ -23,11 +23,16 @@ export default async function gen_ai(UserPrompt,promptType) {
     const text = response.text();
     console.log("Generated text:🤖 ", text);
     // Parse the JSON response - clean the text first
+   
+   
     try {
       // Remove any markdown code blocks if present
       let cleanText = text.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim();
       const parsedResponse = JSON.parse(cleanText);
       return parsedResponse;
+
+
+
     } catch (parseError) {
       console.error("Failed to parse AI response as JSON:", parseError);
       console.error("Raw text:", text);

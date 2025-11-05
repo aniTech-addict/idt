@@ -4,7 +4,7 @@ import axios from 'axios';
 import getPaperId from '../../../utils/getPaperId';
 
 export async function POST(request){
-  
+
   const { query } = await request.json();
   const paperId= await getPaperId(query);
 
@@ -20,9 +20,10 @@ try {
       headers: { 'x-api-key': apiKey }
     })
 
-    
+
     const recommendations = recommendationResponse.data.recommendedPapers;
-    
+
+    return NextResponse.json({ recommendations }, { status: 200 });
 
 }   catch (error) {
         console.error("--- ONE OF THE FETCHES FAILED ---", error);
