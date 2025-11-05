@@ -15,6 +15,8 @@ const HomePage = () => {
     setError(null);
     setResults(null);
 
+
+    // Get Paper id for recommendations req
     try {
       const response = await axios.post('/api/search', { query: data.query });
       setResults(response.data);
