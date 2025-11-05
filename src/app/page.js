@@ -3,11 +3,12 @@
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import { useState } from "react";
-
+import ActiveUser  from "@/components/ActiveUser";
 const HomePage = () => {
   const [results, setResults] = useState(null);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
+  const [user, setUser] = useState({ name: "John Doe", email: "john@example.com", role: "Researcher" });
 
   const { register, handleSubmit, formState: { errors } } = useForm();
   async function onSubmit(data) {
@@ -31,7 +32,13 @@ const HomePage = () => {
 
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 relative">
+
+      {/* ActiveUser positioned in top right corner */}
+      <div className="absolute top-4 right-4 z-10">
+        <ActiveUser user={user} onUpdateUser={setUser} />
+      </div>
+      
       {/* Search Section - Centered at top */}
       <div className="bg-white shadow-sm border-b">
         <div className="max-w-4xl mx-auto px-4 py-8">
