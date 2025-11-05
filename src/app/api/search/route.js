@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import axios from 'axios';
-
+import  gen_ai  from '../../../utils/gemini.util';
 import getPaperId from '../../../utils/getPaperId';
 
 export async function POST(request){
@@ -20,7 +20,9 @@ try {
       headers: { 'x-api-key': apiKey }
     })
 
-  const recommendations = recommendationResponse.data.recommendedPapers;
+    
+    const recommendations = recommendationResponse.data.recommendedPapers;
+    const genRes =await gen_ai(query);
 
   console.log("--- RECOMMENDATIONS FOUND ---", recommendations);
   return new NextResponse(JSON.stringify(recommendations), {
@@ -30,5 +32,9 @@ try {
 
 }   catch (error) {
         console.error("--- ONE OF THE FETCHES FAILED ---", error);
+        return NextResponse.json(
+            { error: 'Failed to fetch recommendations' },
+            { status: 500 }
+        );
     }
 }
