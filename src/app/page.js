@@ -8,7 +8,7 @@ const HomePage = () => {
   const [results, setResults] = useState(null);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
-  const [user, setUser] = useState({ name: "John Doe", email: "john@example.com", role: "Researcher" });
+  const [user, setUser] = useState({ name: "Test User1", email: "john@example.com", role: "Researcher" });
 
   const { register, handleSubmit, formState: { errors } } = useForm();
   async function onSubmit(data) {
