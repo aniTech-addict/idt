@@ -1,9 +1,8 @@
-import { GoogleGenAI } from "@google/genai";
+import { GoogleGenerativeAI } from "@google/generative-ai";
 
+const genAI = new GoogleGenerativeAI(process.env.GOOGLE_API_KEY);
 
-const ai = new GoogleGenAI({});
-
-export async function gen_ai(UserPrompt) {
+export default async function gen_ai(UserPrompt) {
 
   const systemPrompt = `
     
@@ -31,7 +30,7 @@ Output Schema
   "refined_query": "string | null"
 }
 
-🧠 Example 1
+## Example 1
 
 User Query: "Animal"
 
@@ -50,7 +49,7 @@ AI Response:
   "refined_query": null
 }
 
-Example
+## Example User input
 User: "2"
 
 AI Response:
@@ -63,13 +62,17 @@ AI Response:
 }
 
   `
-  prompt = `systemPrompt \n\n UserPrompt: ${UserPrompt}`;
+  const prompt = `${systemPrompt} \n\n UserPrompt: ${UserPrompt}`;
 
-  const response = await ai.models.generateContent({
-    model: "gemini-2.5-flash",
-    contents: prompt,
-  });
-  console.log(response);
+  try {
+    const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash-lite" });
+    const result = await model.generateContent(prompt);
+    const response = await result.response;
+    const text = response.text();
+    console.log("Generated text:🤖 ", text);
+    return text;
+  } catch (error) {
+    console.error("Error in gen_ai function:", error);
+    throw error;
+  }
 }
-
-await main();
