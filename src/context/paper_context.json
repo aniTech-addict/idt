@@ -4,125 +4,933 @@
       "id": "paper_1730783000000_abc123def",
       "title": "Attention Is All You Need",
       "authors": [
-        {"name": "Ashish Vaswani"},
-        {"name": "Noam Shazeer"},
-        {"name": "Niki Parmar"},
-        {"name": "Jakob Uszkoreit"},
-        {"name": "Llion Jones"},
-        {"name": "Aidan N. Gomez"},
-        {"name": "Łukasz Kaiser"},
-        {"name": "Illia Polosukhin"}
+        {
+          "name": "Ashish Vaswani"
+        },
+        {
+          "name": "Noam Shazeer"
+        },
+        {
+          "name": "Niki Parmar"
+        },
+        {
+          "name": "Jakob Uszkoreit"
+        },
+        {
+          "name": "Llion Jones"
+        },
+        {
+          "name": "Aidan N. Gomez"
+        },
+        {
+          "name": "Łukasz Kaiser"
+        },
+        {
+          "name": "Illia Polosukhin"
+        }
       ],
       "year": 2017,
       "url": "https://arxiv.org/abs/1706.03762",
       "abstract": "The dominant sequence transduction models are based on complex recurrent or convolutional neural networks that include an encoder and a decoder. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely.",
       "source": "crawler",
       "crawledAt": "2024-11-05T05:43:20.000Z",
-      "tags": ["transformers", "attention", "neural networks"],
+      "tags": [
+        "transformers",
+        "attention",
+        "neural networks"
+      ],
       "dateAdded": "2024-11-05T05:43:20.000Z"
     },
     {
       "id": "paper_1730783000001_def456ghi",
       "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
       "authors": [
-        {"name": "Jacob Devlin"},
-        {"name": "Ming-Wei Chang"},
-        {"name": "Kenton Lee"},
-        {"name": "Kristina Toutanova"}
+        {
+          "name": "Jacob Devlin"
+        },
+        {
+          "name": "Ming-Wei Chang"
+        },
+        {
+          "name": "Kenton Lee"
+        },
+        {
+          "name": "Kristina Toutanova"
+        }
       ],
       "year": 2018,
       "url": "https://arxiv.org/abs/1810.04805",
       "abstract": "We introduce a new language representation model called BERT, which stands for Bidirectional Encoder Representations from Transformers. Unlike recent language representation models, BERT is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers.",
       "source": "crawler",
       "crawledAt": "2024-11-05T05:43:20.000Z",
-      "tags": ["bert", "transformers", "language understanding", "nlp"],
+      "tags": [
+        "bert",
+        "transformers",
+        "language understanding",
+        "nlp"
+      ],
       "dateAdded": "2024-11-05T05:43:20.000Z"
     },
     {
       "id": "paper_1730783000002_ghi789jkl",
       "title": "GPT-3: Language Models are Few-Shot Learners",
       "authors": [
-        {"name": "Tom B. Brown"},
-        {"name": "Benjamin Mann"},
-        {"name": "Nick Ryder"},
-        {"name": "Melanie Subbiah"},
-        {"name": "Jared Kaplan"},
-        {"name": "Prafulla Dhariwal"},
-        {"name": "Arvind Neelakantan"},
-        {"name": "Pranav Shyam"},
-        {"name": "Girish Sastry"},
-        {"name": "Amanda Askell"},
-        {"name": "Sandhini Agarwal"},
-        {"name": "Ariel Herbert-Voss"},
-        {"name": "Gretchen Krueger"},
-        {"name": "Tom Henighan"},
-        {"name": "Rewon Child"},
-        {"name": "Aditya Ramesh"},
-        {"name": "Daniel M. Ziegler"},
-        {"name": "Jeffrey Wu"},
-        {"name": "Clemens Winter"},
-        {"name": "Christopher Hesse"},
-        {"name": "Mark Chen"},
-        {"name": "Eric Sigler"},
-        {"name": "Mateusz Litwin"},
-        {"name": "Scott Gray"},
-        {"name": "Benjamin Chess"},
-        {"name": "Jack Clark"},
-        {"name": "Christopher Berner"},
-        {"name": "Sam McCandlish"},
-        {"name": "Alec Radford"},
-        {"name": "Ilya Sutskever"},
-        {"name": "Dario Amodei"}
+        {
+          "name": "Tom B. Brown"
+        },
+        {
+          "name": "Benjamin Mann"
+        },
+        {
+          "name": "Nick Ryder"
+        },
+        {
+          "name": "Melanie Subbiah"
+        },
+        {
+          "name": "Jared Kaplan"
+        },
+        {
+          "name": "Prafulla Dhariwal"
+        },
+        {
+          "name": "Arvind Neelakantan"
+        },
+        {
+          "name": "Pranav Shyam"
+        },
+        {
+          "name": "Girish Sastry"
+        },
+        {
+          "name": "Amanda Askell"
+        },
+        {
+          "name": "Sandhini Agarwal"
+        },
+        {
+          "name": "Ariel Herbert-Voss"
+        },
+        {
+          "name": "Gretchen Krueger"
+        },
+        {
+          "name": "Tom Henighan"
+        },
+        {
+          "name": "Rewon Child"
+        },
+        {
+          "name": "Aditya Ramesh"
+        },
+        {
+          "name": "Daniel M. Ziegler"
+        },
+        {
+          "name": "Jeffrey Wu"
+        },
+        {
+          "name": "Clemens Winter"
+        },
+        {
+          "name": "Christopher Hesse"
+        },
+        {
+          "name": "Mark Chen"
+        },
+        {
+          "name": "Eric Sigler"
+        },
+        {
+          "name": "Mateusz Litwin"
+        },
+        {
+          "name": "Scott Gray"
+        },
+        {
+          "name": "Benjamin Chess"
+        },
+        {
+          "name": "Jack Clark"
+        },
+        {
+          "name": "Christopher Berner"
+        },
+        {
+          "name": "Sam McCandlish"
+        },
+        {
+          "name": "Alec Radford"
+        },
+        {
+          "name": "Ilya Sutskever"
+        },
+        {
+          "name": "Dario Amodei"
+        }
       ],
       "year": 2020,
       "url": "https://arxiv.org/abs/2005.14165",
       "abstract": "Recent work has demonstrated substantial gains on many NLP tasks and benchmarks by pre-training on a large corpus of text followed by fine-tuning on a specific task. While typically task-agnostic in architecture, this method still requires task-specific fine-tuning datasets of thousands or tens of thousands of examples. By contrast, humans can generally perform a new language task from only a few examples or from simple instructions.",
       "source": "crawler",
       "crawledAt": "2024-11-05T05:43:20.000Z",
-      "tags": ["gpt", "language models", "few-shot learning", "nlp"],
+      "tags": [
+        "gpt",
+        "language models",
+        "few-shot learning",
+        "nlp"
+      ],
       "dateAdded": "2024-11-05T05:43:20.000Z"
     },
     {
       "id": "paper_1730783000003_jkl012mno",
       "title": "Post-Training Quantization for Large Language Models",
       "authors": [
-        {"name": "Tim Dettmers"},
-        {"name": "Mike Lewis"},
-        {"name": "Younes Belkada"},
-        {"name": "Luke Zettlemoyer"}
+        {
+          "name": "Tim Dettmers"
+        },
+        {
+          "name": "Mike Lewis"
+        },
+        {
+          "name": "Younes Belkada"
+        },
+        {
+          "name": "Luke Zettlemoyer"
+        }
       ],
       "year": 2023,
       "url": "https://arxiv.org/abs/2308.08079",
       "abstract": "This paper introduces a novel post-training quantization method for large language models that achieves high compression rates while maintaining model performance. The method uses a combination of quantization-aware training techniques and optimized weight representations to reduce model size by up to 75% with minimal accuracy loss.",
       "source": "crawler",
       "crawledAt": "2024-11-05T05:43:20.000Z",
-      "tags": ["quantization", "large language models", "model compression", "efficiency"],
+      "tags": [
+        "quantization",
+        "large language models",
+        "model compression",
+        "efficiency"
+      ],
       "dateAdded": "2024-11-05T05:43:20.000Z"
     },
     {
       "id": "paper_1730783000004_mno345pqr",
       "title": "LoRA: Low-Rank Adaptation of Large Language Models",
       "authors": [
-        {"name": "Edward J. Hu"},
-        {"name": "Yelong Shen"},
-        {"name": "Phillip Wallis"},
-        {"name": "Zeyuan Allen-Zhu"},
-        {"name": "Yuanzhi Li"},
-        {"name": "Shean Wang"},
-        {"name": "Lu Wang"},
-        {"name": "Weizhu Chen"}
+        {
+          "name": "Edward J. Hu"
+        },
+        {
+          "name": "Yelong Shen"
+        },
+        {
+          "name": "Phillip Wallis"
+        },
+        {
+          "name": "Zeyuan Allen-Zhu"
+        },
+        {
+          "name": "Yuanzhi Li"
+        },
+        {
+          "name": "Shean Wang"
+        },
+        {
+          "name": "Lu Wang"
+        },
+        {
+          "name": "Weizhu Chen"
+        }
       ],
       "year": 2021,
       "url": "https://arxiv.org/abs/2106.09685",
       "abstract": "An important paradigm of natural language processing consists of large-scale pre-training on general domain data and adaptation to particular tasks or domains. As we pre-train larger models, full fine-tuning, which retrains all of a model's parameters, becomes less feasible. Using GPT-3 as an example, deploying independent instances of fine-tuned models, each with 175 billion parameters, is prohibitively expensive.",
       "source": "crawler",
       "crawledAt": "2024-11-05T05:43:20.000Z",
-      "tags": ["lora", "fine-tuning", "parameter efficient", "large language models"],
+      "tags": [
+        "lora",
+        "fine-tuning",
+        "parameter efficient",
+        "large language models"
+      ],
       "dateAdded": "2024-11-05T05:43:20.000Z"
     }
   ],
-  "searchResults": [],
+  "searchResults": [
+    {
+      "id": "search_1762322121476_7liol0rnl",
+      "query": "Attention Is All You Need",
+      "results": [],
+      "paperId": "204e3073870fae3d05bcbc2f6a8e263d9b72e776",
+      "searchType": "semantic_scholar_recommendations",
+      "timestamp": "2025-11-05T05:55:21.476Z"
+    },
+    {
+      "id": "search_1762322127246_wp296mcuw",
+      "query": "Attention Is All You Need",
+      "results": [],
+      "paperId": "204e3073870fae3d05bcbc2f6a8e263d9b72e776",
+      "searchType": "semantic_scholar_recommendations",
+      "timestamp": "2025-11-05T05:55:27.246Z"
+    },
+    {
+      "id": "search_1762322367752_bt98ouq0q",
+      "query": "A Comprehensive Study of Neural Network Architectures for Natural Language Processing Tasks",
+      "results": [
+        {
+          "paperId": "33cef2590c6997823df7293f5afcc79925d92dd5",
+          "url": "https://www.semanticscholar.org/paper/33cef2590c6997823df7293f5afcc79925d92dd5",
+          "title": "From Review to Practice: A Comparative Study and Decision-Support Framework for Sentiment Classification Models",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.14569/ijacsa.2025.0160967?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.14569/ijacsa.2025.0160967, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "authors": [
+            {
+              "authorId": "2384206612",
+              "name": "Kamal Walji"
+            },
+            {
+              "authorId": "30757867",
+              "name": "Allae Erraissi"
+            },
+            {
+              "authorId": "1808014",
+              "name": "Abdelali Zakrani"
+            },
+            {
+              "authorId": "89868579",
+              "name": "Mouad Banane"
+            }
+          ],
+          "abstract": "— Sentiment classification is a core task in natural language processing (NLP), enabling automated interpretation of opinionated text across domains, such as social media, e-commerce, and healthcare. While numerous models have been proposed — from classical machine learning algorithms to deep neural networks and transformer architectures — their adoption is often hindered by trade-offs in performance, interpretability, and computational cost. This paper presents a threefold contribution: 1) a structured review of over 30 peer-reviewed studies that compare sentiment classifiers across five analytical dimensions — accuracy, robustness, interpretability, efficiency, and context adaptability; 2) a lightweight empirical benchmark on the IMDb dataset, evaluating Naïve Bayes, linear SVM, and LSTM; and 3) a practitioner-oriented decision-support framework comprising a model selection flowchart and recommendation matrix. The experimental results show that SVM achieved the highest F1-score (0.8329), while Naïve Bayes provided strong performance with minimal training time, and LSTM underperformed under constrained conditions. We further highlight persistent challenges in benchmarking consistency, model explainability, and cross-lingual adaptability. The paper concludes with actionable future directions, including hybrid architectures, low-resource deployment strategies, and inclusive NLP systems for diverse user populations. To our knowledge, this is the first study that unifies systematic review, empirical validation, and practical decision tools in the field of sentiment classification."
+        },
+        {
+          "paperId": "9e641464084dcbb83dcd2d78fac6935a702a075e",
+          "url": "https://www.semanticscholar.org/paper/9e641464084dcbb83dcd2d78fac6935a702a075e",
+          "title": "BIG DATA-DRIVEN DEEP LEARNING FOR NATURAL LANGUAGE PROCESSING",
+          "year": null,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null
+          },
+          "authors": [
+            {
+              "authorId": "2382893939",
+              "name": "Rakshit Dabral"
+            },
+            {
+              "authorId": "2382974423",
+              "name": "Dr. Archana Kumar"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "b48a4c6bf1717b157b4e7cebc73d5512cbbea58f",
+          "url": "https://www.semanticscholar.org/paper/b48a4c6bf1717b157b4e7cebc73d5512cbbea58f",
+          "title": "Sentiment Analysis Revisited: A Multi-Metric Comparative Study",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.14569/ijacsa.2025.0160965?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.14569/ijacsa.2025.0160965, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "authors": [
+            {
+              "authorId": "2384206612",
+              "name": "Kamal Walji"
+            },
+            {
+              "authorId": "30757867",
+              "name": "Allae Erraissi"
+            },
+            {
+              "authorId": "1808014",
+              "name": "Abdelali Zakrani"
+            },
+            {
+              "authorId": "89868579",
+              "name": "Mouad Banane"
+            }
+          ],
+          "abstract": "— Sentiment analysis is a fundamental task in natural language processing with wide-ranging applications, from customer feedback monitoring to healthcare and social media analytics. While recent research has mainly emphasized predictive accuracy, computational efficiency has remained largely overlooked, despite its importance for large-scale and real-time deployment. This study addresses this gap by conducting a comparative evaluation of classical machine learning algorithms (Logistic Regression, Naïve Bayes, Random Forest) and deep learning architectures [Convolutional Neural Networks (CNNs) and Long Short-Term Memory (LSTM)]. Experiments were carried out on two benchmark datasets, IMDB and Yelp Polarity, with evaluation based on accuracy, precision, recall, F1-score, training time, and a novel Efficiency Score. Results on IMDB show that Logistic Regression and LSTM both achieved 88% accuracy, but with radically different costs: Logistic Regression trained in 0.25 seconds, whereas LSTM required more than 2600 seconds. On Yelp Polarity, Logistic Regression improved to 91.6% accuracy, outperforming LSTM (86.2%) while remaining over 300 times faster. By integrating both predictive metrics and efficiency measures, the Efficiency Score highlighted the practical advantages of Logistic Regression and Naïve Bayes in resource-constrained environments. This dual evaluation framework demonstrates that classical models remain highly competitive when both accuracy and efficiency are considered, providing a practical alternative to computationally expensive neural architectures and offering practitioners clear guidelines for model selection under real-world constraints."
+        },
+        {
+          "paperId": "17cb528137b9fc50f47421a7a16c7b39af4d7370",
+          "url": "https://www.semanticscholar.org/paper/17cb528137b9fc50f47421a7a16c7b39af4d7370",
+          "title": "Analysing the Current State of Development of Bert-Based Text Classification in Natural Language Processing",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1051/itmconf/20257804019?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1051/itmconf/20257804019, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "authors": [
+            {
+              "authorId": "2379820071",
+              "name": "Litong Pu"
+            },
+            {
+              "authorId": "2380564063",
+              "name": "Yang Yang"
+            }
+          ],
+          "abstract": "Text classification is an important task in natural language processing, and traditional text classification methods have certain limitations, such as low accuracy, low flexibility and high disadvantages in terms of computational resources and time cost. With the development of deep learning, the BERT text classification model shows what advantages can compensate for the limitations of traditional methods. This paper aims to explore the development of BERT for text classification from three aspects: the birth of BERT, the optimisation and improvement of BERT, and the architectural innovation and application extension. This paper concludes that BERT has brought text classification to a new stage of 'pre-training + fine-tuning'. Its variants are more effective than other methods for binary sentiment classification, Alzheimer's disease detection and power audit text classification. However, the BERT model suffers from high computational resource requirements, high efficiency compromised by computational complexity, insufficient model interpretability, and low adaptability to specific domains and small datasets. In the future, we can promote the development of efficient model architectures and training methods, focus on interpretable model architectures and tools, and improve the adaptability of BERT in specific domains."
+        },
+        {
+          "paperId": "936b030945eb875a9fc619f711aea20c4f83766d",
+          "url": "https://www.semanticscholar.org/paper/936b030945eb875a9fc619f711aea20c4f83766d",
+          "title": "Sentiment Analysis for Product Review using Hybrid CNN-LSTM Model",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.55041/isjem05062?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.55041/isjem05062, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "authors": [
+            {
+              "authorId": "2384495960",
+              "name": "Nikita Tanwar"
+            }
+          ],
+          "abstract": "Abstract\nSentiment analysis, also known as opinion mining, has established itself as a pivotal research area in natural language processing (NLP) and machine learning due to the explosive growth of user-generated content on digital platforms. With the widespread use of online reviews, social media interactions, and other digital feedback channels, organizations and researchers alike seek automated tools to extract meaningful sentiment from large volumes of textual data efficiently and accurately. Early techniques relied heavily on traditional machine learning algorithms such as Naïve Bayes, Support Vector Machines (SVM), and Logistic Regression. While these methods can achieve acceptable performance levels, they inherently treat text as a bag of words or shallow feature vectors, which limits their ability to capture intricate linguistic nuances, semantic relationships, and long-range contextual dependencies present in natural language.\n\nIn contrast, deep learning approaches, notably Convolutional Neural Networks (CNNs) and Long Short-Term Memory (LSTM) networks, have driven significant advancements in text classification tasks, including sentiment analysis. CNNs are particularly effective at extracting local patterns and features such as n-grams and short phrase structures by applying convolutional filters, making them well suited for identifying sentiment-bearing textual fragments. On the other hand, LSTMs are designed to model sequential data and can capture long-term dependencies and contextual information through their gating mechanisms, thereby preserving the semantic flow of language over longer texts.\n\nTo leverage the complementary strengths of these architectures, this research proposes a hybrid CNN-LSTM model tailored for sentiment analysis on movie reviews. The CNN component serves as a feature extractor that identifies salient local features in the text, while the LSTM component processes these features sequentially to understand context and temporal relationships. This combined framework aims to produce a more robust and nuanced representation of sentiment by integrating spatial and temporal feature learning.\n\nThe model is implemented on the benchmark IMDB movie review dataset, a widely used corpus for evaluating sentiment classification techniques. Data preprocessing steps such as tokenization, stop-word removal, and the application of pretrained word embeddings from Word2Vec and GloVe are employed to standardize input text and imbue the model with semantic knowledge before training. The performance of the proposed hybrid model is compared against multiple baseline systems, including standalone CNN and LSTM models as well as classical machine learning classifiers, to establish empirical benchmarks.\n\nEvaluation metrics covering accuracy, precision, recall, F1-score, and confusion matrices are utilized to provide a comprehensive assessment of classification effectiveness and error patterns. Preliminary results indicate that the hybrid CNN-LSTM outperforms baseline methods, especially in handling complex or ambiguous reviews with mixed sentiment expressions. This demonstrates the efficacy of hybrid deep learning models in achieving higher accuracy and better generalization capabilities in natural language understanding tasks.\n\nThe findings presented here contribute to the growing body of research on sentiment analysis by showing how integrating spatial and temporal neural architectures can enhance classification performance. Additionally, the research outcomes have practical implications for real-world applications such as recommendation systems, customer sentiment monitoring, social media analytics, and market research, where understanding user opinions with high precision is essential for informed decision-making\n\nAbstract\nSentiment analysis, also known as opinion mining, has established itself as a pivotal research area in natural language processing (NLP) and machine learning due to the explosive growth of user-generated content on digital platforms. With the widespread use of online reviews, social media interactions, and other digital feedback channels, organizations and researchers alike seek automated tools to extract meaningful sentiment from large volumes of textual data efficiently and accurately. Early techniques relied heavily on traditional machine learning algorithms such as Naïve Bayes, Support Vector Machines (SVM), and Logistic Regression. While these methods can achieve acceptable performance levels, they inherently treat text as a bag of words or shallow feature vectors, which limits their ability to capture intricate linguistic nuances, semantic relationships, and long-range contextual dependencies present in natural language.\n\nIn contrast, deep learning approaches, notably Convolutional Neural Networks (CNNs) and Long Short-Term Memory (LSTM) networks, have driven significant advancements in text classification tasks, including sentiment analysis. CNNs are particularly effective at extracting local patterns and features such as n-grams and short phrase structures by applying convolutional filters, making them well suited for identifying sentiment-bearing textual fragments. On the other hand, LSTMs are designed to model sequential data and can capture long-term dependencies and contextual information through their gating mechanisms, thereby preserving the semantic flow of language over longer texts.\n\nTo leverage the complementary strengths of these architectures, this research proposes a hybrid CNN-LSTM model tailored for sentiment analysis on movie reviews. The CNN component serves as a feature extractor that identifies salient local features in the text, while the LSTM component processes these features sequentially to understand context and temporal relationships. This combined framework aims to produce a more robust and nuanced representation of sentiment by integrating spatial and temporal feature learning.\n\nThe model is implemented on the benchmark IMDB movie review dataset, a widely used corpus for evaluating sentiment classification techniques. Data preprocessing steps such as tokenization, stop-word removal, and the application of pretrained word embeddings from Word2Vec and GloVe are employed to standardize input text and imbue the model with semantic knowledge before training. The performance of the proposed hybrid model is compared against multiple baseline systems, including standalone CNN and LSTM models as well as classical machine learning classifiers, to establish empirical benchmarks.\n\nEvaluation metrics covering accuracy, precision, recall, F1-score, and confusion matrices are utilized to provide a comprehensive assessment of classification effectiveness and error patterns. Preliminary results indicate that the hybrid CNN-LSTM outperforms baseline methods, especially in handling complex or ambiguous reviews with mixed sentiment expressions. This demonstrates the efficacy of hybrid deep learning models in achieving higher accuracy and better generalization capabilities in natural language understanding tasks.\n\nThe findings presented here contribute to the growing body of research on sentiment analysis by showing how integrating spatial and temporal neural architectures can enhance classification performance. Additionally, the research outcomes have practical implications for real-world applications such as recommendation systems, customer sentiment monitoring, social media analytics, and market research, where understanding user opinions with high precision is essential for informed decision-making\n\nAbstract\nSentiment analysis, also known as opinion mining, has established itself as a pivotal research area in natural language processing (NLP) and machine learning due to the explosive growth of user-generated content on digital platforms. With the widespread use of online reviews, social media interactions, and other digital feedback channels, organizations and researchers alike seek automated tools to extract meaningful sentiment from large volumes of textual data efficiently and accurately. Early techniques relied heavily on traditional machine learning algorithms such as Naïve Bayes, Support Vector Machines (SVM), and Logistic Regression. While these methods can achieve acceptable performance levels, they inherently treat text as a bag of words or shallow feature vectors, which limits their ability to capture intricate linguistic nuances, semantic relationships, and long-range contextual dependencies present in natural language.\n\nIn contrast, deep learning approaches, notably Convolutional Neural Networks (CNNs) and Long Short-Term Memory (LSTM) networks, have driven significant advancements in text classification tasks, including sentiment analysis. CNNs are particularly effective at extracting local patterns and features such as n-grams and short phrase structures by applying convolutional filters, making them well suited for identifying sentiment-bearing textual fragments. On the other hand, LSTMs are designed to model sequential data and can capture long-term dependencies and contextual information through their gating mechanisms, thereby preserving the semantic flow of language over longer texts.\n\nTo leverage the complementary strengths of these architectures, this research proposes a hybrid CNN-LSTM model tailored for sentiment analysis on movie reviews. The CNN component serves as a feature extractor that identifies salient local features in the text, while the LSTM component processes these features sequentially to understand context and temporal relationships. This combined framework aims to produce a more robust and nuanced representation of sentiment by integrating spatial and temporal feature learning.\n\nThe model is implemented on the benchmark IMDB movie review dataset, a widely used corpus for evaluating sentiment classification techniques. Data preprocessing steps such as tokenization, stop-word removal, and the application of pretrained word e"
+        },
+        {
+          "paperId": "e6da390043d9682e4f6d10c0495945514b4d711c",
+          "url": "https://www.semanticscholar.org/paper/e6da390043d9682e4f6d10c0495945514b4d711c",
+          "title": "A Novel Stacked Ensemble Framework for Sentiment Classification in Kashmiri",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1177/18758967251385270?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1177/18758967251385270, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "authors": [
+            {
+              "authorId": "2270307019",
+              "name": "Sheezan Farooq"
+            },
+            {
+              "authorId": "9310887",
+              "name": "Rumaan Bashir"
+            }
+          ],
+          "abstract": "The task of sentiment analysis is fundamental for Natural Language Processing because it allows Natural Language Processing (NLP) systems to group texts based on subjective expressions. Despite progress has been made in multilingual sentiment classification, Kashmiri language struggles to gain representation due to non-existent labeled datasets and pre-trained models. The study presents EnsembleSenti-Kash which represents a stacked ensemble learning system built to perform Kashmiri sentiment analysis. To address the lack of existing resources, a labeled Kashmiri sentiment dataset was manually developed for this study, along with a custom stopword file to enhance text preprocessing. TF-IDF vectorization was employed for feature extraction. The proposed model combines Support Vector Machine (SVM), Random Forest (RF), XGBoost and Logistic Regression (LR) as a base and Logistic Regression classifier as a meta-classifier. In addition, to the ensemble model, individual classifiers (SVM, RF, LR) were trained and evaluated, achieving accuracies of 93.1%, 91.5%, and 92.75%, respectively. The ensemble model outperformed all individual classifiers with an overall accuracy of 93.35% and works best in classification of sentiments among all the models. To strengthen the analysis, deep learning models including Long Short-Term Memory (LSTM) and multilingual BERT (mBERT) were also evaluated as baselines. A real-time usability study was performed, reporting model size, number of parameters and inference time, which demonstrated that the proposed model offers a practical balance between accuracy and efficiency. The performance of all models under study is also confirmed through AUC-ROC evaluation. This research lays important groundwork for Kashmiri NLP by providing a new dataset and demonstrating an effective sentiment classification approach."
+        },
+        {
+          "paperId": "4bcaaca15ed5172f0ae3b9b237c5afb43686aeb9",
+          "url": "https://www.semanticscholar.org/paper/4bcaaca15ed5172f0ae3b9b237c5afb43686aeb9",
+          "title": "Fast lightweight convolutional neural network for Turkish sentiment analysis",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.11591/eei.v14i5.9960?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.11591/eei.v14i5.9960, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "authors": [
+            {
+              "authorId": "2527377",
+              "name": "Saed Alqaraleh"
+            },
+            {
+              "authorId": "2385057981",
+              "name": "Abdul Hafiz AbdulHafiz"
+            }
+          ],
+          "abstract": "This study presents a fast, lightweight, and high-performing fast convolutional neural network (Fast CNN) model tailored for Turkish sentiment analysis (SA). The agglutinative morphology of Turkish, combined with the limited availability of high-quality linguistic resources, introduces significant challenges for conventional approaches. To address these issues, we propose a streamlined Fast CNN architecture consisting of an embedding layer, global max-pooling, dropout, and fully connected layers. Despite its simplicity, the model outperforms seven state-of-the-art convolutional neural network (CNN)-based systems across four benchmark Turkish sentiment datasets. It achieves an average area under the curve (AUC) of 0.94, representing a 6.8% improvement over the strongest baseline and a gain of over 80% relative to several deeper architectures. In addition to its superior accuracy, the model demonstrates reduced computational complexity, making it well-suited for real-world deployment in resourceconstrained environments. Potential applications include customer feedback mining and digital marketing analytics in Turkish-language domains."
+        },
+        {
+          "paperId": "6a89fa40bece1515e51c9b2c3d1d22899194e0dd",
+          "url": "https://www.semanticscholar.org/paper/6a89fa40bece1515e51c9b2c3d1d22899194e0dd",
+          "title": "A Comprehensive Survey of Arabic Sentiment Analysis: Techniques, Challenges, and Future Directions",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/MIUCC66482.2025.11196872?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/MIUCC66482.2025.11196872, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "authors": [
+            {
+              "authorId": "2165163442",
+              "name": "E. A. Goda"
+            },
+            {
+              "authorId": "71058842",
+              "name": "D. Abdelminaam"
+            },
+            {
+              "authorId": "2387001475",
+              "name": "Rasha Orban Mahmoud"
+            }
+          ],
+          "abstract": "Analyzing and understanding sentiments in social media content on platforms like Twitter, Facebook, and Instagram has become increasingly important today. Sentiment analysis (SA) of these documents provides valuable insights into user opinions, helping to gauge the overall sentiment on these platforms. The sentiment analysis problem can be viewed as a classification task, where text is categorized as positive, negative, or neutral. This paper aims to provide a comprehensive review of the key concepts and state-of-the-art techniques in SA, along with a comparative study of their performances, key applications, limitations, and future directions. Our analysis reveals that researchers primarily use three approaches for SA: lexicon/rules-based methods, machine learning (ML), and deep learning (DL). Lexicon/rules-based models typically achieve performance levels between 55% and 85%, while ML models show performance ranging from 55% to 90%. DL models, however, tend to deliver higher performance, ranging from 70% to 95% These performance ranges are approximate and may vary depending on dataset quality, model architecture, preprocessing techniques, and the quality and scope of the lexicon used. Additionally, researchers have explored hybrid models and optimization techniques to further improve SA model performance."
+        },
+        {
+          "paperId": "35d835d43450af4348ee49c8f7097b7ab9c3ecd0",
+          "url": "https://www.semanticscholar.org/paper/35d835d43450af4348ee49c8f7097b7ab9c3ecd0",
+          "title": "Exploring Large Language Models for Financial Applications: Techniques, Performance, and Challenges with FinMA",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2510.05151, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "authors": [
+            {
+              "authorId": "88727530",
+              "name": "P. Djagba"
+            },
+            {
+              "authorId": "2384361595",
+              "name": "Abdelkader Y. Saley"
+            }
+          ],
+          "abstract": "This research explores the strengths and weaknesses of domain-adapted Large Language Models (LLMs) in the context of financial natural language processing (NLP). The analysis centers on FinMA, a model created within the PIXIU framework, which is evaluated for its performance in specialized financial tasks. Recognizing the critical demands of accuracy, reliability, and domain adaptation in financial applications, this study examines FinMA's model architecture, its instruction tuning process utilizing the Financial Instruction Tuning (FIT) dataset, and its evaluation under the FLARE benchmark. Findings indicate that FinMA performs well in sentiment analysis and classification, but faces notable challenges in tasks involving numerical reasoning, entity recognition, and summarization. This work aims to advance the understanding of how financial LLMs can be effectively designed and evaluated to assist in finance-related decision-making processes."
+        },
+        {
+          "paperId": "dbf6d7e57bcb5b2e5586fe0069a30af8accb998b",
+          "url": "https://www.semanticscholar.org/paper/dbf6d7e57bcb5b2e5586fe0069a30af8accb998b",
+          "title": "Comparative performance analysis of LSTM, GRU, and bidirectional neural networks for political ideology classification",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.11591/eei.v14i5.9980?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.11591/eei.v14i5.9980, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "authors": [
+            {
+              "authorId": "2089311108",
+              "name": "Lasmedi Afuan"
+            },
+            {
+              "authorId": "2267570500",
+              "name": "Nurul Hidayat"
+            },
+            {
+              "authorId": "2267632891",
+              "name": "Ipung Permadi"
+            },
+            {
+              "authorId": "2384912599",
+              "name": "Iqbal Iqbal"
+            },
+            {
+              "authorId": "2357354375",
+              "name": "Didit Suprihanto"
+            },
+            {
+              "authorId": "2384921351",
+              "name": "Panky Bintang Pradana Yosua"
+            },
+            {
+              "authorId": "2384912632",
+              "name": "Reyno Alfarez Marchelian"
+            }
+          ],
+          "abstract": "Political ideology classification is crucial for understanding social polarization, monitoring democratic processes, and identifying bias on online platforms. This study compares the performance of long short-term memory (LSTM), gated recurrent unit (GRU), and bidirectional GRU (Bi-GRU) neural network models in classifying liberal and conservative political ideologies from social media text data. The Bi-GRU achieved the best results with 88.75% accuracy and 89.16% F1-score, highlighting its strength in contextual analysis. These findings suggest their applicability in areas such as election monitoring and the analysis of political discourse. This study contributes to the field of political text classification by offering a comparative analysis of deep learning architectures. The dataset utilized covers a wide range of issues, including social, political, economic, religious, and racial topics, demonstrating its comprehensive nature. Visualizations using WordCloud and uniform manifold approximation and projection (UMAP) reveal distinct ideological patterns, validating the dataset’s quality for training models. The findings underscore the importance of utilizing advanced bidirectional architectures for nuanced tasks, such as ideology classification, where contextual understanding is crucial. These insights open avenues for future research, such as the application of Bi-GRU in analyzing multilingual political ideologies or real-time sentiment tracking during election campaigns."
+        }
+      ],
+      "paperId": "e5323d19a8ec8d86a2dd8d8c80a84776283233c3",
+      "searchType": "semantic_scholar_recommendations",
+      "timestamp": "2025-11-05T05:59:27.752Z"
+    },
+    {
+      "id": "search_1762322784143_7bkzg96ha",
+      "query": "\"Quantizing Transformer-based Models for Efficient Inference\"",
+      "results": [
+        {
+          "paperId": "62788eb1e061a728e5ff39a50479aef12dcc103f",
+          "url": "https://www.semanticscholar.org/paper/62788eb1e061a728e5ff39a50479aef12dcc103f",
+          "title": "AxCore: A Quantization-Aware Approximate GEMM Unit for LLM Inference",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1145/3725843.3756094?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1145/3725843.3756094, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "authors": [
+            {
+              "authorId": "2381241183",
+              "name": "Jiaxiang Zou"
+            },
+            {
+              "authorId": "2380796563",
+              "name": "Yonghao Chen"
+            },
+            {
+              "authorId": "2387967641",
+              "name": "Xingyu Chen"
+            },
+            {
+              "authorId": "2387995906",
+              "name": "Chenxi Xu"
+            },
+            {
+              "authorId": "2380814814",
+              "name": "Xinyu Chen"
+            }
+          ],
+          "abstract": "Large Language Models (LLMs) have become foundational to modern natural language processing, yet their immense computational and memory demands pose major obstacles for efficient inference. Transformer-based LLMs rely heavily on floating-point general matrix-matrix multiplication (FP-GEMM), which dominates both compute and bandwidth. In this paper, we introduce AxCore, a quantization-aware, approximate GEMM unit that combines weight-only quantization with floating-point multiplication approximation (FPMA) to deliver highly efficient and accurate LLM inference. Unlike traditional GEMM units, AxCore eliminates multipliers entirely, replacing them with low-bit integer additions in a novel systolic array. AxCore features several key innovations: (1) a mixed-precision FPMA-based processing element that supports direct computation on compressed weights and high-precision activations; (2) a lightweight accuracy preservation strategy, including subnormal number handling, error compensation, and format-aware quantization; and (3) a set of systolic array optimizations, including shared correction and normalization logic. Evaluations on open-source LLMs show that AxCore achieves up to 6.3 × -12.5 × higher compute density than conventional FP GEMM units. Compared to state-of-the-art INT4-based accelerators, FIGLUT and FIGNA, AxCore improves compute density by 53% and 70%, respectively, while also delivering lower perplexity. AxCore is opensourced at: https://github.com/CLab-HKUST-GZ/micro58-axcore."
+        },
+        {
+          "paperId": "e9c3f9f1c7d03b58bc385acc392b5faac0b5ba12",
+          "url": "https://www.semanticscholar.org/paper/e9c3f9f1c7d03b58bc385acc392b5faac0b5ba12",
+          "title": "Mixed-Precision Quantization for Language Models: Techniques and Prospects",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2510.16805, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "authors": [
+            {
+              "authorId": "2219406208",
+              "name": "Mariam Rakka"
+            },
+            {
+              "authorId": "2090358941",
+              "name": "Marios Fournarakis"
+            },
+            {
+              "authorId": "3340925",
+              "name": "O. Krestinskaya"
+            },
+            {
+              "authorId": "2047535460",
+              "name": "Jinane Bazzi"
+            },
+            {
+              "authorId": "2327050829",
+              "name": "Khaled N. Salama"
+            },
+            {
+              "authorId": "2267747293",
+              "name": "Fadi J. Kurdahi"
+            },
+            {
+              "authorId": "2281993450",
+              "name": "Ahmed M. Eltawil"
+            },
+            {
+              "authorId": "11702681",
+              "name": "M. Fouda"
+            }
+          ],
+          "abstract": "The rapid scaling of language models (LMs) has resulted in unprecedented computational, memory, and energy requirements, making their training and deployment increasingly unsustainable. Quantization has emerged as an essential compression technique to reduce model size, alleviate memory bottlenecks, and accelerate inference. However, while uniform low-bit quantization (e.g., INT8, INT4) provides significant efficiency gains, it can degrade accuracy in sensitive components of transformer-based LMs. Mixed-precision quantization offers a promising alternative by selectively allocating precision across layers or within tensors to balance efficiency and accuracy. This survey provides a comprehensive overview of Mixed-Precision quantization frameworks for LMs (MXPLMs). We first review quantization fundamentals, including uniform and non-uniform quantizers, quantization granularity, and methods widely used in post-training quantization. We then categorize and compare recent MXPLM frameworks according to their bit allocation strategies and precision configurations across weights, activations, and key-value caches. A comparative analysis highlights differences in perplexity, zero-shot task performance, and deployment trade-offs. Furthermore, we contrast MXPLMs with earlier mixed-precision quantization methods for deep neural networks, identifying strategies that transfer and those that face challenges in the LM setting. Finally, we summarize open issues and future directions, including hardware-aware design, activation quantization, and scalable optimization methods for billion-parameter models. By consolidating recent advances, this work serves as a reference for understanding the current landscape and research prospects of mixed-precision quantization for large-scale language models."
+        },
+        {
+          "paperId": "01fcb82d7c4c80572cbd6b0940c9e7d14b9d5494",
+          "url": "https://www.semanticscholar.org/paper/01fcb82d7c4c80572cbd6b0940c9e7d14b9d5494",
+          "title": "Learning Grouped Lattice Vector Quantizers for Low-Bit LLM Compression",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2510.20984, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "authors": [
+            {
+              "authorId": "2387812443",
+              "name": "Xi Zhang"
+            },
+            {
+              "authorId": "2280899117",
+              "name": "Xiaolin Wu"
+            },
+            {
+              "authorId": "2387822293",
+              "name": "Jiamang Wang"
+            },
+            {
+              "authorId": "2387846179",
+              "name": "Weisi Lin"
+            }
+          ],
+          "abstract": "Large Language Models (LLMs) have demonstrated remarkable capabilities but typically require extensive computational resources and memory for inference. Post-training quantization (PTQ) can effectively reduce these demands by storing weights in lower bit-width formats. However, standard uniform quantization often leads to notable performance degradation, particularly in low-bit scenarios. In this work, we introduce a Grouped Lattice Vector Quantization (GLVQ) framework that assigns each group of weights a customized lattice codebook, defined by a learnable generation matrix. To address the non-differentiability of the quantization process, we adopt Babai rounding to approximate nearest-lattice-point search during training, which enables stable optimization of the generation matrices. Once trained, decoding reduces to a simple matrix-vector multiplication, yielding an efficient and practical quantization pipeline. Experiments on multiple benchmarks show that our approach achieves a better trade-off between model size and accuracy compared to existing post-training quantization baselines, highlighting its effectiveness in deploying large models under stringent resource constraints. Our source code is available on GitHub repository: https://github.com/xzhang9308/GLVQ."
+        },
+        {
+          "paperId": "2a46a311911bef087228cb09b211d70bb0b8da77",
+          "url": "https://www.semanticscholar.org/paper/2a46a311911bef087228cb09b211d70bb0b8da77",
+          "title": "WARP-LUTs - Walsh-Assisted Relaxation for Probabilistic Look Up Tables",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2510.15655, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "authors": [
+            {
+              "authorId": "2386523508",
+              "name": "Lino Gerlach"
+            },
+            {
+              "authorId": "2375818598",
+              "name": "Liv Vaage"
+            },
+            {
+              "authorId": "2386527866",
+              "name": "Thore Gerlach"
+            },
+            {
+              "authorId": "2386523501",
+              "name": "Elliott Kauffman"
+            }
+          ],
+          "abstract": "Fast and efficient machine learning is of growing interest to the scientific community and has spurred significant research into novel model architectures and hardware-aware design. Recent hard? and software co-design approaches have demonstrated impressive results with entirely multiplication-free models. Differentiable Logic Gate Networks (DLGNs), for instance, provide a gradient-based framework for learning optimal combinations of low-level logic gates, setting state-of-the-art trade-offs between accuracy, resource usage, and latency. However, these models suffer from high computational cost during training and do not generalize well to logic blocks with more inputs. In this work, we introduce Walsh-Assisted Relaxation for Probabilistic Look-Up Tables (WARP-LUTs) - a novel gradient-based method that efficiently learns combinations of logic gates with substantially fewer trainable parameters. We demonstrate that WARP-LUTs achieve significantly faster convergence on CIFAR-10 compared to DLGNs, while maintaining comparable accuracy. Furthermore, our approach suggests potential for extension to higher-input logic blocks, motivating future research on extremely efficient deployment on modern FPGAs and its real-time science applications."
+        },
+        {
+          "paperId": "e7421d65a152f7e05725545128c28bd83ca462ab",
+          "url": "https://www.semanticscholar.org/paper/e7421d65a152f7e05725545128c28bd83ca462ab",
+          "title": "PTQTP: Post-Training Quantization to Trit-Planes for Large Language Models",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2509.16989, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "authors": [
+            {
+              "authorId": "2375320263",
+              "name": "He Xiao"
+            },
+            {
+              "authorId": "2320337311",
+              "name": "Runming Yang"
+            },
+            {
+              "authorId": "2374954451",
+              "name": "Qingyao Yang"
+            },
+            {
+              "authorId": "2363332074",
+              "name": "Wendong Xu"
+            },
+            {
+              "authorId": "2381460895",
+              "name": "Zheng Li"
+            },
+            {
+              "authorId": "2286850679",
+              "name": "Yupeng Su"
+            },
+            {
+              "authorId": "2347731611",
+              "name": "Zhengwu Liu"
+            },
+            {
+              "authorId": "2330266685",
+              "name": "Hongxia Yang"
+            },
+            {
+              "authorId": "2338828236",
+              "name": "Ngai Wong"
+            }
+          ],
+          "abstract": "Post-training quantization (PTQ) of large language models (LLMs) to extremely low bit-widths remains challenging due to the fundamental trade-off between computational efficiency and model expressiveness. While existing ultra-low-bit PTQ methods rely on binary approximations or complex compensation mechanisms, they suffer from either limited representational capacity or computational overhead that undermines their efficiency gains. We introduce PTQ to Trit-Planes (PTQTP), the first ternary-weight PTQ framework that decomposes weight matrices into structured ternary {-1, 0, 1} trit-planes using 2x1.58-bit representation. PTQTP achieves multiplication-free inference, identical to 1-bit quantization, while maintaining superior expressiveness through its novel structured decomposition. Our approach provides: (1) a theoretically grounded progressive approximation algorithm ensuring global weight consistency; (2) model-agnostic deployment across diverse modern LLMs without architectural modifications; and (3) uniform ternary operations that eliminate the need for mixed-precision or compensation schemes. Comprehensive experiments across LLaMA3.x and Qwen3 model families (0.6B-70B parameters) demonstrate that PTQTP significantly outperforms existing low-bit PTQ methods, achieving 82.4% mathematical reasoning retention versus 0% for competing approaches. PTQTP approaches and sometimes surpasses 1.58-bit quantization-aware training performance while requiring only single-hour quantization compared to 10-14 GPU days for training-based methods. These results establish PTQTP as a practical solution for efficient LLM deployment in resource-constrained environments."
+        },
+        {
+          "paperId": "6c6e45ff3b77d6a2d4b9cf86b5756b91d6e98915",
+          "url": "https://www.semanticscholar.org/paper/6c6e45ff3b77d6a2d4b9cf86b5756b91d6e98915",
+          "title": "BALF: Budgeted Activation-Aware Low-Rank Factorization for Fine-Tuning-Free Model Compression",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2509.25136, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "authors": [
+            {
+              "authorId": "2383005864",
+              "name": "David González-Martínez"
+            }
+          ],
+          "abstract": "Neural network compression techniques typically require expensive fine-tuning or search procedures, rendering them impractical on commodity hardware. Inspired by recent LLM compression research, we present a general activation-aware factorization framework that can be applied to a broad range of layers. Moreover, we introduce a scalable budgeted rank allocator that allows flexible control over compression targets (e.g., retaining 50% of parameters) with no overhead. Together, these components form BALF, an efficient pipeline for compressing models without fine-tuning. We demonstrate its effectiveness across multiple scales and architectures, from ResNet-20 on CIFAR-10 to ResNeXt-101 and vision transformers on ImageNet, and show that it achieves excellent results in the fine-tuning-free regime. For instance, BALF reduces FLOPs on ResNeXt-101 by 45% with only a 1-percentage-point top-1 accuracy drop."
+        },
+        {
+          "paperId": "fb2c0256a2afaacb8649d732e93b758c18bae40e",
+          "url": "https://www.semanticscholar.org/paper/fb2c0256a2afaacb8649d732e93b758c18bae40e",
+          "title": "SINQ: Sinkhorn-Normalized Quantization for Calibration-Free Low-Precision LLM Weights",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2509.22944, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "authors": [
+            {
+              "authorId": "2248083609",
+              "name": "Lorenz K. Müller"
+            },
+            {
+              "authorId": "2382924238",
+              "name": "Philippe Bich"
+            },
+            {
+              "authorId": "2330189715",
+              "name": "Jiawei Zhuang"
+            },
+            {
+              "authorId": "2386536513",
+              "name": "Ahmet Çelik"
+            },
+            {
+              "authorId": "2382924265",
+              "name": "Luca Benfenati"
+            },
+            {
+              "authorId": "2381985253",
+              "name": "Lukas Cavigelli"
+            }
+          ],
+          "abstract": "Post-training quantization has emerged as the most widely used strategy for deploying large language models at low precision. Still, current methods show perplexity degradation at bit-widths less than or equal to 4, partly because representing outliers causes precision issues in parameters that share the same scales as these outliers. This problem is especially pronounced for calibration-free, uniform quantization methods. We introduce SINQ to augment existing post-training quantizers with an additional second-axis scale factor and a fast Sinkhorn-Knopp-style algorithm that finds scales to normalize per-row and per-column variances, thereby minimizing a novel per-matrix proxy target for quantization: the matrix imbalance. Our method has no interactions between layers and can be trivially applied to new architectures to quantize any linear layers. We evaluate our method on the Qwen3 model family and DeepSeek-V2.5. SINQ improves WikiText2 and C4 perplexity significantly against uncalibrated uniform quantization baselines and can be further enhanced by combining it with calibration and non-uniform quantization levels. Code to reproduce the results of this work and to easily quantize models using SINQ is available at https://github.com/huawei-csl/SINQ."
+        },
+        {
+          "paperId": "04f9eca52d67b876ef4a7acb8647c74b054a3d64",
+          "url": "https://www.semanticscholar.org/paper/04f9eca52d67b876ef4a7acb8647c74b054a3d64",
+          "title": "QWHA: Quantization-Aware Walsh-Hadamard Adaptation for Parameter-Efficient Fine-Tuning on Large Language Models",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2509.17428, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "authors": [
+            {
+              "authorId": "2283134717",
+              "name": "Hyesung Jeon"
+            },
+            {
+              "authorId": "2382320094",
+              "name": "Seojune Lee"
+            },
+            {
+              "authorId": "2376161879",
+              "name": "Beomseok Kang"
+            },
+            {
+              "authorId": "51148698",
+              "name": "Yulhwa Kim"
+            },
+            {
+              "authorId": "2262513070",
+              "name": "Jae-Joon Kim"
+            }
+          ],
+          "abstract": "The demand for efficient deployment of large language models (LLMs) has driven interest in quantization, which reduces inference cost, and parameter-efficient fine-tuning (PEFT), which lowers training overhead. This motivated the development of quantization-aware PEFT to produce accurate yet efficient quantized models. In this setting, reducing quantization error prior to fine-tuning is crucial for achieving high model accuracy. However, existing methods that rely on low-rank adaptation suffer from limited representational capacity. Recent Fourier-related transform (FT)-based adapters offer greater representational power than low-rank adapters, but their direct integration into quantized models often results in ineffective error reduction and increased computational overhead. To overcome these limitations, we propose QWHA, a method that integrates FT-based adapters into quantized models by employing the Walsh-Hadamard Transform (WHT) as the transform kernel, together with a novel adapter initialization scheme incorporating adaptive parameter selection and value refinement. We demonstrate that QWHA effectively mitigates quantization errors while facilitating fine-tuning, and that its design substantially reduces computational cost. Experimental results show that QWHA consistently outperforms baselines in low-bit quantization accuracy and achieves significant training speedups over existing FT-based adapters. The code is available at https://github.com/vantaa89/qwha."
+        },
+        {
+          "paperId": "2e102ba9ff77f02eb964a1cbdb6d2ee2fceebcc5",
+          "url": "https://www.semanticscholar.org/paper/2e102ba9ff77f02eb964a1cbdb6d2ee2fceebcc5",
+          "title": "Tequila: Trapping-free Ternary Quantization for Large Language Models",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2509.23809, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "authors": [
+            {
+              "authorId": "2383417601",
+              "name": "Hong Huang"
+            },
+            {
+              "authorId": "2273577687",
+              "name": "Decheng Wu"
+            },
+            {
+              "authorId": "2382922872",
+              "name": "Rui Cen"
+            },
+            {
+              "authorId": "2363409414",
+              "name": "Guanghua Yu"
+            },
+            {
+              "authorId": "2383140684",
+              "name": "Zonghang Li"
+            },
+            {
+              "authorId": "2261474854",
+              "name": "Kai Liu"
+            },
+            {
+              "authorId": "2342235300",
+              "name": "Jian-Xiang Zhu"
+            },
+            {
+              "authorId": "2383308572",
+              "name": "Peng Chen"
+            },
+            {
+              "authorId": "2383599425",
+              "name": "Xue Liu"
+            },
+            {
+              "authorId": "2344384666",
+              "name": "Dapeng Wu"
+            }
+          ],
+          "abstract": "Quantization techniques are essential for the deployment of Large Language Models (LLMs) on edge devices. However, prevailing methods often rely on mixed-precision multiplication that lacks efficient hardware support, making it not feasible. Ternary weight quantization addresses this by constraining weights to {-1, 0, 1}, replacing expensive multiplications with hardware-efficient additions. However, such aggressive compression leads to significant accuracy degradation, even after costly quantization-aware training with massive data. We identify the core issue as deadzone trapping: a large number of weights are trapped at the deadzone boundary. This occurs because these weights receive only noisy, uninformative gradients, preventing stable escape from the deadzone and severely impeding model capacity and optimization. To address this issue, we propose Tequila, a trapping-free quantization optimization method that reactivates deadzone-trapped weights by repurposing them as dynamic biases. This allows the repurposed weights to provide a continuous signal in the forward pass and, critically, receive direct, meaningful gradient signals during backpropagation, thereby enhancing model capacity and optimization with nearly zero inference overhead. Extensive evaluations demonstrate that Tequila outperforms state-of-the-art (SOTA) ternary quantization methods across five benchmarks. Specifically, on the ARC benchmark, it achieves>4% accuracy gain over the SOTA baseline, nearly matching full-precision performance (within<1% gap) with a 3.0x inference speedup. Consequently, Tequila offers a highly practical and efficient implementation for the deployment of advanced LLMs in resource-constrained environments. The code is available at https://github.com/Tencent/AngelSlim."
+        },
+        {
+          "paperId": "9ec7c384baec498d8330f0fda88377bff23f317c",
+          "url": "https://www.semanticscholar.org/paper/9ec7c384baec498d8330f0fda88377bff23f317c",
+          "title": "Characterization of quantized inference with transformer encoders on low power CPUs",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1177/10943420251355115?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1177/10943420251355115, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "authors": [
+            {
+              "authorId": "2261734231",
+              "name": "Héctor Martínez"
+            },
+            {
+              "authorId": "2266209332",
+              "name": "Sandra Catalán"
+            },
+            {
+              "authorId": "35405691",
+              "name": "Adrián Castelló"
+            },
+            {
+              "authorId": "1389874349",
+              "name": "E. Quintana-Ortí"
+            }
+          ],
+          "abstract": null
+        }
+      ],
+      "paperId": "5eeb828685e44ca5b8ebafb34a9fa4d51c9186df",
+      "searchType": "semantic_scholar_recommendations",
+      "timestamp": "2025-11-05T06:06:24.143Z"
+    }
+  ],
   "chatHistory": [],
-  "lastUpdated": "2024-11-05T05:43:20.000Z",
+  "lastUpdated": "2025-11-05T06:06:24.143Z",
   "version": "1.0"
 }

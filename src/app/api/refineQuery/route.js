@@ -12,6 +12,8 @@ export async function POST(request) {
         // Use the refined title to search for recommendations
         const searchResponse = await axios.post(`${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'}/api/search`, {
             query: refinedTitle
+        }, {
+            timeout: 30000 // 30 second timeout
         });
 
         const recommendations = searchResponse.data.recommendations;
@@ -25,8 +27,21 @@ export async function POST(request) {
         });
     } catch (error) {
         console.error("Error in refineQuery:", error);
+
+        // Handle different error types
+        if (error.response?.status === 429) {
+            return new NextResponse(JSON.stringify({
+                error: 'Rate limit exceeded. Please try again later.',
+                recommendations: []
+            }), {
+                status: 429,
+                headers: { 'Content-Type': 'application/json' },
+            });
+        }
+
         return new NextResponse(JSON.stringify({
-            error: 'Failed to refine query and fetch recommendations'
+            error: 'Failed to refine query and fetch recommendations',
+            recommendations: []
         }), {
             status: 500,
             headers: { 'Content-Type': 'application/json' },

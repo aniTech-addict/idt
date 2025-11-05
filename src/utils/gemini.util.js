@@ -1,7 +1,7 @@
 import { ENHANCE_QUERY, SUGGEST_QUERY } from "@/constants/promts";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
-const genAI = new GoogleGenerativeAI(process.env.GOOGLE_API_KEY);
+const genAI = new GoogleGenerativeAI('AIzaSyCPx6GzvYFF0vhiZoAsJaxkYPzy08wgr3I');
 
 export default async function gen_ai(UserPrompt,promptType) {
   let systemPrompt;

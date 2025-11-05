@@ -1,6 +1,6 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
-const genAI = new GoogleGenerativeAI(process.env.GOOGLE_API_KEY);
+const genAI = new GoogleGenerativeAI(process.env.GOOGLE_API_KEY || 'AIzaSyCPx6GzvYFF0vhiZoAsJaxkYPzy08wgr3I');
 
 export default async function gen_ai_title(UserPrompt, context) {
   const systemPrompt = `# System Role / Behavior: You are an AI research assistant with access to real academic papers.

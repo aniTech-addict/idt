@@ -1,7 +1,7 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || 'AIzaSyCPx6GzvYFF0vhiZoAsJaxkYPzy08wgr3I');
 
 // System prompt — defines the research assistant's tone + behavior
 const SYSTEM_PROMPT = `

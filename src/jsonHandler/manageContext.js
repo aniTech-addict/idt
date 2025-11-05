@@ -307,6 +307,77 @@ function generateMessageId() {
 }
 
 /**
+ * Generates a unique ID for a search result
+ * @returns {string} Unique search result ID
+ */
+function generateSearchResultId() {
+  return `search_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+}
+
+/**
+ * Adds a search result to the context
+ * @param {Object} searchResult - The search result object
+ * @returns {Object} The added search result with generated ID
+ */
+export function addSearchResult(searchResult) {
+  try {
+    const context = readPaperContext();
+
+    // Validate search result object
+    if (!searchResult.query || !searchResult.results) {
+      throw new Error('Search result must have query and results');
+    }
+
+    const newSearchResult = {
+      id: generateSearchResultId(),
+      ...searchResult,
+      timestamp: new Date().toISOString()
+    };
+
+    if (!context.searchResults) {
+      context.searchResults = [];
+    }
+
+    context.searchResults.push(newSearchResult);
+    writePaperContext(context);
+
+    return newSearchResult;
+  } catch (error) {
+    console.error('Error adding search result:', error);
+    throw error;
+  }
+}
+
+/**
+ * Retrieves all search results
+ * @returns {Array} Array of all search results
+ */
+export function getSearchResults() {
+  try {
+    const context = readPaperContext();
+    return context.searchResults || [];
+  } catch (error) {
+    console.error('Error getting search results:', error);
+    throw error;
+  }
+}
+
+/**
+ * Retrieves a search result by ID
+ * @param {string} id - The search result ID
+ * @returns {Object|null} The search result or null if not found
+ */
+export function getSearchResultById(id) {
+  try {
+    const context = readPaperContext();
+    return (context.searchResults || []).find(result => result.id === id) || null;
+  } catch (error) {
+    console.error('Error getting search result by ID:', error);
+    throw error;
+  }
+}
+
+/**
  * Validates paper data structure
  * @param {Object} paper - The paper object to validate
  * @returns {boolean} True if valid
